@@ -1,0 +1,200 @@
+create table themes(
+T_ID int primary key,
+T_Name varchar(20),
+Budget int,
+Party_Budget int
+);
+
+create table customers(
+    C_ID int primary key,
+    C_Name varchar(20),
+    DOB date,
+    Check_In_Date date,
+    Check_Out_Date date,
+    Contact_No int
+);
+
+create table Employees(
+E_ID int primary key,
+E_Name varchar(20),
+E_Mail varchar(30),
+Contact_No int,
+DOB date,
+Salary int,
+Designation varchar(20)
+);
+
+create table Rides(
+R_ID int primary key,
+R_Name varchar(20),
+Restriction int,
+R_Price int
+);
+
+create table includes(
+    T_ID int,
+    R_ID int primary key,
+    foreign key (T_ID) references themes(T_ID),
+    foreign key (R_ID) references rides(R_ID)
+);
+
+
+
+create table works(
+E_ID int primary key, 
+T_ID int,
+foreign key (E_ID) references employees(E_ID),
+foreign key (T_ID) references themes(T_ID)
+);
+
+create table Shows(
+S_ID int primary key,
+S_Name varchar(20),
+capacity int,
+S_Price int 
+);
+
+create table maintenance(
+    R_ID int,
+    Start_Date date,
+    End_Date date,
+    E_ID int, 
+    Status varchar(10),
+    foreign key (R_ID) references rides(R_ID),
+    foreign key (E_ID) references employees(E_ID),
+    primary key (R_ID,Start_Date)
+);
+
+create table parties(
+    P_ID int primary key,
+    P_Time timestamp,
+    Party_Date date,
+    P_Duration timestamp
+);
+
+create table Food_Item(
+F_ID int primary key,
+F_Name varchar(20),
+F_Price int 
+);
+
+create table Shops(
+Shop_ID int primary key,
+Shop_Name varchar(30)
+);
+
+create table shop_items(
+I_ID int primary key,
+Item_Name varchar(20),
+Item_Price int
+);
+
+create table Game_Zone(
+G_ID int primary key,
+G_Name varchar(20),
+G_Price int
+);
+
+create table Hotel_Room_Type(
+RT_ID int primary key,
+Type_Name varchar(20),
+Expanses int ,
+Profit_pcent int
+);
+
+create table incorporates(
+T_ID int,
+S_ID int primary key,
+foreign key (T_ID) references themes(T_ID),
+foreign key (S_ID) references shows(S_ID)
+);
+
+create table Show_Tickets(
+C_ID int,
+S_ID int,
+Seat_No int,
+S_Time timestamp,
+S_Date date,
+primary key(C_ID,S_ID,S_Date,S_Time),
+foreign key(C_ID) references customers(C_ID),
+foreign key(S_ID) references shows(S_ID)
+);
+
+create table rides_ticket(
+R_ID int,
+C_ID int,
+R_Date date,
+R_Time timestamp,
+primary key(R_ID,C_ID,R_Date,R_Time),
+foreign key(R_ID) references rides(R_ID),
+foreign key(C_ID) references customers(C_ID)
+);
+
+create table Food_Billing(
+C_ID int,
+F_ID int,
+Food_Quantity int,
+F_Time timestamp,
+F_Date date,
+primary key(C_ID,F_ID,F_Time),
+foreign key(C_ID) references customers(C_ID),
+foreign key(F_ID) references food_item(F_ID)
+);
+
+create table stay(
+C_ID int,
+RT_ID int,
+Room_No int,
+Total_Bill int,
+Discount int,
+S_Date date,
+primary key(C_ID,S_Date),
+foreign key(C_ID) references customers(C_ID),
+foreign key(RT_ID) references hotel_room_type(RT_ID)
+);
+
+create table sold(
+C_ID int,
+I_ID int,
+Sold_Date date,
+Quantity int,
+S_Time timestamp,
+primary key(C_ID,I_ID,Sold_Date,S_Time),
+foreign key (C_ID) references customers(C_ID),
+foreign key (I_ID) references shop_items(I_ID)
+);
+
+create table sells(
+Shop_ID int,
+I_ID int,
+primary key(Shop_ID,I_ID),
+foreign key(Shop_ID) references shops(Shop_ID),
+foreign key(I_ID) references shop_items(I_ID)
+);
+
+create table games_played(
+C_ID int,
+G_ID int,
+G_Date date,
+G_Time timestamp,
+Total_Price int,
+primary key(C_ID,G_Time),
+foreign key (C_ID) references customers (C_ID),
+foreign key (G_ID) references game_zone (G_ID)
+);
+
+CREATE TABLE Gives(
+   C_ID INTEGER  NOT NULL
+  ,P_ID INTEGER  NOT NULL
+  ,primary key(C_ID,P_ID)
+  ,foreign key(C_ID) references customers(C_ID)
+  ,foreign key(P_ID) references parties(P_ID)
+);
+
+
+
+
+
+
+
+

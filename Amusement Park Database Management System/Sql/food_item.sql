@@ -1,0 +1,55 @@
+CREATE TABLE food_item(
+   F_ID    INTEGER  NOT NULL PRIMARY KEY 
+  ,F_NAME  VARCHAR(43) NOT NULL
+  ,F_PRICE INTEGER  NOT NULL
+);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (369589,'Blanched Truffles &amp; Pigeon',357);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (103948,'Simmered Ginger Lamb',671);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (240866,'Basted Casserole of Clams',412);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (507783,'Cooked Lime Herring',712);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (894118,'Stewed Mint &amp; Berry Gratin',121);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (534272,'Tea-Smoked Forest Salad',138);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (528579,'Papaya and Cardamom Mooncake',180);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (591005,'Apple and Pistachio Jelly',590);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (356438,'Date Toffee',495);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (695294,'Guava Waffles',260);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (471519,'Roasted Almonds &amp; Avocado Lamb',263);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (250420,'Smoked Nuts &amp; Pork',570);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (616780,'Tea-Smoked Chili Trout',112);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (481871,'Pressure-Fried Apricots &amp; Honey Clams',155);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (558797,'Fire-Roasted Garlic &amp; Lime Flatbread',470);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (200367,'Marinated Nuts &amp; Scrambled Egg',740);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (372720,'Lime and Chocolate Yogurt',106);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (796254,'Cinnamon and Cranberry Molten Cake',575);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (946354,'Papaya Pound Cake',491);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (247510,'Chocolate Waffles',501);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (169224,'Stir-Fried Casserole of Lamb',559);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (288062,'Pressure-Cooked Basil &amp; Clove Horse',622);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (690412,'Fried Raspberry &amp; Peanut Herring',501);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (576121,'Broasted Salted Salmon',286);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (378205,'Marinated Apples &amp; Walnut Taco',281);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (407955,'Stir-Fried Basil &amp; Cinnamon Pasta',675);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (942700,'Orange and Mandarin Surprise',459);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (756550,'Saffron and Peanut Custard',271);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (849907,'Nutmeg Cheesecake',688);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (236990,'Plum Milk',494);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (682666,'Saut�ed Almonds &amp; Avocado Pork',627);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (824149,'Seared Honey Duck',479);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (689895,'Pressure-Fried Honey &amp; Almond Shrimps',524);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (465738,'Pan-Fried Pepper &amp; Mango Cod',192);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (827901,'Infused Stew of Tortilla',492);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (298342,'Broasted Honey-Coated Buns',261);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (251314,'Cardamom and Peanut Custard',592);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (468864,'Date and Peach Pancakes',195);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (947417,'Banana Bombe',497);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (693879,'Cranberry Toffee',635);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (234547,'Deep-Fried Salted Pork',229);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (331517,'Pressure-Cooked Mushroom &amp; Apricot Lamb',187);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (327205,'Dry-Roasted Mushroom &amp; Apricot Mussels',657);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (955036,'Cured Thyme &amp; Parsley Cod',604);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (678531,'Pressure-Fried Mushroom &amp; Garlic Salad',723);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (477782,'Seared Fennel &amp; Lime Potato Wedges',427);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (702156,'Papaya and Banana Toast',224);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (919728,'Apple and Cherry Jelly',498);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (160767,'Nutmeg Pud',580);
+INSERT INTO food_item(F_ID,F_NAME,F_PRICE) VALUES (507632,'Mandarin Fruit Salad',605);

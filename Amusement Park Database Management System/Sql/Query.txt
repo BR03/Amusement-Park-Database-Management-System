@@ -1,0 +1,11 @@
+select F_ID
+from Food_Billing as B
+where B.Food_Qauntity>=all(select Food_Qauntity
+							from Food_Billing)
+and B.C_ID in(select C_ID
+			   from Gives
+			   where P_ID in(select P_ID
+							  from Party_Billing
+							  where T_ID in(select T_ID
+											from Themes
+											where T_Name='Pirates')));
